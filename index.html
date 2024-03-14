@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons Darek c:</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <main class="flex flex-col h-screen w-screen ">
+        <div>
+            <p class="text-center font-bold text-3xl">Los simpsons </p>
+            <div class="flex flex-row gap-2 items-center justify-center back">
+                <input class="border border-gray-300 rounded-lg p-4" id="inputNombre" type="text" placeholder="Nombre del personaje: ">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="botonNombre">Aplicar</button>
+                <p>|</p>
+                <input class="border border-gray-300 rounded-lg p-4" id="inputQuotes" type="text" placeholder="Numero de quotes:">
+                <input class="border border-gray-300 rounded-lg p-4" id="inputNombre2" type="text" placeholder="Nombre del personaje: ">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="botonQuotes">Aplicar</button>
+                <p>|</p>
+                <button class="bg-red-500 hover:bg-red-700 text-black font-bold py-2 px-4 rounded" id="botonFiltrosQuitar">Quitar filtros</button>
+            </div>
+        </div>
+        <div class="flex justify-around items-center back">
+            <div id="contenedor-simpsons" class="grid grid-cols-3 justify-around gap-10">               
+            </div>
+        </div>
+        <div class="flex items-center justify-center back">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="botonCargarMas">Cargar mas...</button>
+        </div>
+        <script src="./utilidad.js"></script>     
+    </main>
+    
+</body>
+</html>
